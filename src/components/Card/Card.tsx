@@ -5,7 +5,7 @@ function Card({
   borderColor,
 }: {
   category: Category;
-  borderColor: string;
+  borderColor: "red" | "cyan" | "orange" | "blue";
 }) {
   return (
     <div className={`card ${borderColor}`}>

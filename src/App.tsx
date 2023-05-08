@@ -1,5 +1,6 @@
 import Card from "./components/Card/Card";
 import Footer from "./components/Footer/Footer";
+import "./App.css";
 function App() {
   return (
     <main>
@@ -17,7 +18,7 @@ function App() {
           iconPath: "icon-supervisor.svg",
           iconDescription: "Magnifying Lense with Eyeball",
         }}
-        borderColor="red"
+        borderColor="cyan"
       />
       <Card
         category={{
@@ -36,7 +37,7 @@ function App() {
           iconPath: "icon-karma.svg",
           iconDescription: "Lightbulb turned on",
         }}
-        borderColor="red"
+        borderColor="orange"
       />
       <Card
         category={{
@@ -46,7 +47,7 @@ function App() {
           iconPath: "icon-calculator.svg",
           iconDescription: "Computer monitor",
         }}
-        borderColor="red"
+        borderColor="blue"
       />
       <Footer />
     </main>
