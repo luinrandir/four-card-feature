@@ -9,8 +9,10 @@ function Card({
 }) {
   return (
     <div className={`card ${borderColor}`}>
-      <h2>{category.title}</h2>
-      <p>{category.description}</p>
+      <div>
+        <h2>{category.title}</h2>
+        <p>{category.description}</p>
+      </div>
       <img src={`icons/${category.iconPath}`} alt={category.iconDescription} />
     </div>
   );

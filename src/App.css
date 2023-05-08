@@ -64,4 +64,66 @@ svg {
 body {
   font-family: var(--ff-primary);
   font-size: var(--global-font-size);
+  font-weight: var(--fw-base);
+  color: hsl(var(--pclr-dark-blue));
+  background-color: hsl(var(--nclr-light-grey));
+}
+
+.hero {
+  --gap-width: 1.875rem;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 4rem;
+}
+
+.info {
+  --heading-font-size: 2.25rem;
+  display: grid;
+  gap: 1rem;
+  max-width: 540px;
+  justify-self: center;
+}
+
+.info h1 {
+  font-size: var(--heading-font-size);
+  font-weight: var(--fw-light);
+  text-align: center;
+}
+
+.info strong {
+  font-weight: var(--fw-bold);
+}
+
+.info p {
+  text-align: center;
+  opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap-width);
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  display: grid;
+  gap: var(--gap-width);
+}
+
+@media (width<1440px) {
+  .hero {
+    padding-top: 5.3125rem;
+    padding-inline: 2rem;
+  }
+  .info {
+    --heading-font-size: 1.5rem;
+  }
+}
+
+@media (width<1180px) {
+  .flex {
+    flex-direction: column;
+  }
 }
